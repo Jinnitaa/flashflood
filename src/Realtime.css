@@ -1,0 +1,86 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+
+.main-content{
+    margin-left:220px;
+    color: #27406F;
+    font-family: arial;
+    margin-top:20px;
+}
+
+.header1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-icon img{
+    width: 120px;
+    padding-right: 70px;
+}
+
+.contain1 {
+    background-color: white; /* Background of the container */
+    padding: 20px; /* Padding inside the container */
+    border-radius: 10px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1); /* Shadow outside the container */
+    margin: 20px; /* Margin around the container */
+    width: 80%; /* Adjust width as needed */
+    max-width: 1200px; /* Optional: Limit the maximum width */
+    margin-right: auto; /* Center the container horizontally */
+    text-align: justify;
+}
+.alert-content {
+    display: flex;
+    align-items: center; /* Align the circle and description vertically */
+}
+
+.circle-border {
+    position: relative;
+    display: inline-block;
+    padding: 20px;
+    border: 3px solid #15E1A4;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 18px;
+    width: 100px;
+    height: 100px;
+    line-height: 60px;
+    background-color: white;
+    margin-right: 20px; /* Space between circle and description */
+}
+
+.desc {
+    max-width: 600px; /* You can adjust this based on your layout */
+    font-size: 16px;
+}
+
+.desc p {
+    margin: 0;
+}
+
+.red-circle {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.orange-circle {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: orange;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.green-circle {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: green;
+    border-radius: 50%;
+    margin-right: 8px;
+}
