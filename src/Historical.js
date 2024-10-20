@@ -29,7 +29,7 @@ const Historical = () => {
                     </div>
                 </div>
                <p>Location Steong Prek Thnoat</p>
-                 {/* Display the selected date in DD/MM/YYYY format */}
+          
                  <p>Date: {selectedDate.format('DD/MM/YYYY')}</p>
                  <LocalizationProvider dateAdapter={AdapterDayjs}>
                     <DemoContainer components={['DatePicker']}>

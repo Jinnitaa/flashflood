@@ -36,17 +36,16 @@ const LoginForm = ({ toggleForm }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
-  const navigate = useNavigate(); // Initialize navigate
+  const navigate = useNavigate(); 
 
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Login:', { email, password });
 
-    // Here you would typically validate the credentials
-    // For this example, we'll assume login is successful if email and password are not empty
+   
     if (email && password) {
-      // Redirect to the dashboard on successful login
-      navigate('/real-time'); // Change this to your actual dashboard route
+      
+      navigate('/real-time'); 
     }
   };
 

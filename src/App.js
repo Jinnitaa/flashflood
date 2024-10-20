@@ -1,8 +1,8 @@
 import './App.css';
-import Features from './Feature'; // Ensure this path is correct
-import RealTime from './RealTime'; // Ensure this path is correct
-import Navbar from './Nav'; // Ensure this path is correct
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'; // Import Link here
+import Features from './Feature';
+import RealTime from './RealTime'; 
+import Navbar from './Nav'; 
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Historical from './Historical';
 import Forecasting from './Forcasting';
 import Footer from './Footer';
@@ -15,9 +15,9 @@ function App() {
       <div className="App">
         <header className="App-header">
           
-          {/* Define Routes here */}
+         
           <Routes>
-            {/* Define a home route for your main content */}
+           
             <Route
               path="/"
               element={
