@@ -1,34 +1,31 @@
-// LoginSignupPage.js
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import './Login.css';
 
 const LoginPage = () => {
   const [isLogin, setIsLogin] = useState(true); // Toggle between login and signup
-
   const toggleForm = () => {
     setIsLogin(!isLogin);
   };
 
   return (
-    <div className="container">
-      {/* Left side for image */}
-      <div className="image-container">
-        <img
-          src="8.png"
-          alt="Welcome"
-          className="side-image"
-        />
-      </div>
+    <div className="login_body">
+      <div className="container4">
+        {/* Left side for image */}
+        <div className="image-container">
+          <img src="8.png" alt="Welcome" className="side-image" />
+        </div>
 
-      {/* Right side for forms */}
-      <div className="form-container">
-        {isLogin ? (
-          <LoginForm toggleForm={toggleForm} />
-        ) : (
-          <SignupForm toggleForm={toggleForm} />
-        )}
+        {/* Right side for forms */}
+        <div className="form-container">
+          {isLogin ? (
+            <LoginForm toggleForm={toggleForm} />
+          ) : (
+            <SignupForm toggleForm={toggleForm} />
+          )}
+        </div>
       </div>
     </div>
   );
@@ -39,10 +36,18 @@ const LoginForm = ({ toggleForm }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
+  const navigate = useNavigate(); // Initialize navigate
 
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Login:', { email, password });
+
+    // Here you would typically validate the credentials
+    // For this example, we'll assume login is successful if email and password are not empty
+    if (email && password) {
+      // Redirect to the dashboard on successful login
+      navigate('/real-time'); // Change this to your actual dashboard route
+    }
   };
 
   return (

@@ -10,24 +10,24 @@ const Sidebar = () => {
                 <ul>
                     <li>
                     <Link to="/real-time">
-                            <i className="fa fa-dashboard"></i>
-                            <span className="nav-text">
+                            <i className="fa fa-dashboard" style={{ color: 'white' }}></i>
+                            <span className="nav-text" style={{ color: 'white' }}>
                             Real-Time Monitoring
                             </span>
                         </Link>
                     </li>
                     <li className="has-subnav">
                     <Link to="/historical">
-                            <i className="fa fa-desktop"></i>
-                            <span className="nav-text">
+                            <i className="fa fa-desktop" style={{ color: 'white' }}></i>
+                            <span className="nav-text" style={{ color: 'white' }}>
                             Historical Recording
                             </span>
                     </Link>
                     </li>
                     <li className="has-subnav">
                         <a href="/forecasting">
-                           <i className="fa fa-signal"></i>
-                            <span className="nav-text">
+                           <i className="fa fa-signal" style={{ color: 'white' }}></i>
+                            <span className="nav-text" style={{ color: 'white' }}>
                             Forecasting 
                             </span>
                         </a>
@@ -39,8 +39,8 @@ const Sidebar = () => {
                 <ul className="logout">
                     <li>
                     <Link to="/">
-                             <i className="fa fa-power-off fa-2x"></i>
-                            <span className="nav-text">
+                             <i className="fa fa-power-off fa-2x" style={{ color: 'white' }}></i>
+                            <span className="nav-text" style={{ color: 'white' }}>
                                 Logout
                             </span>
                             </Link>
