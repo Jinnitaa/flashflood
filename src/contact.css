@@ -1,0 +1,79 @@
+.mainContainer {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+  
+}
+
+.aboutSection, .contactSection {
+  flex: 1;
+  padding: 20px;
+  border-radius: 8px;
+  
+}
+
+.aboutSection h1 {
+  padding-top: 20px;
+  margin-bottom: 15px;
+  color:white;
+}
+
+.aboutSection p {
+  font-size: 16px;
+  line-height: 1.5;
+  color:white;
+  text-align: justify;
+}
+.aboutSection p::after {
+  content: "";
+  display: block;
+  height: 2px; 
+  width: 100%;
+  background-color: white; 
+  margin-top: 20px; 
+}
+
+.contactSection{
+  background-color: white;
+}
+.contactSection:hover {
+  background-color: #f0f8ff; /* Light blue background on hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+.contactSection h2{
+  
+  color:#27406F;
+}
+
+.contactSection form {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.contactSection label {
+  margin-top: 10px;
+ 
+}
+
+.contactSection input, .contactSection textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.contactSection button {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #00adef;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contactSection button:hover {
+  background-color: #27406f;
+}

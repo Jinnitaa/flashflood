@@ -26,6 +26,7 @@
   flex: 1; /* Takes up one part of the available space */
   max-width: 500px; /* Optional max width */
   padding: 20px;
+  line-height: 1.5;
   
 }
 
@@ -49,6 +50,11 @@
   color: white;
   border:none;
  
+}
+
+.star button:hover {
+  background-color: #27406f; /* Change color on hover */
+  transform: scale(1.05); /* Slightly increase size on hover */
 }
 
 .cont2{

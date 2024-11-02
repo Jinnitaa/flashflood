@@ -87,5 +87,3 @@ const WaterLevelChart = () => {
 };
 
 export default WaterLevelChart;
-
-

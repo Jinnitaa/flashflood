@@ -6,7 +6,7 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Historical from './Historical';
 import Forecasting from './Forcasting';
 import Footer from './Footer';
-import LoginPage from './Login';
+import Contact from './Contact';
 
 
 function App() {
@@ -36,7 +36,7 @@ function App() {
                       </div>
                     </div>
                     <div className="image-container">
-                      <img src="/home1.png" alt="Sample" />
+                      <img src="/home3.png" alt="Sample" />
                     </div>
                   </div>
 
@@ -60,6 +60,7 @@ function App() {
                     <h1>Features</h1>
                     <Features />
                   </div>
+                  <Contact/>
                   <Footer/>
                 </div>
               }
@@ -68,7 +69,6 @@ function App() {
             <Route path="/real-time" element={<RealTime />} />
             <Route path="/historical" element={<Historical/>} />
             <Route path="/forecasting" element={<Forecasting/>} />
-            <Route path="/login" element={<LoginPage/>} />
           </Routes>
         </header>
       </div>

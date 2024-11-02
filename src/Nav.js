@@ -13,11 +13,7 @@ const Navbar = () => {
       <div className="menu-icon" onClick={handleClick}>
         {click ? <FaTimes /> : <FaBars />}
       </div>
-      <ul className={click ? "nav-menu active" : "nav-menu"}>
-        <li><a href="/">Home</a></li>
-        <li><a href="/login">Dashboard</a></li>
-        <li><a href="/">Contact</a></li>
-      </ul>
+     
     </nav>
   );
 };
